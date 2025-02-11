@@ -1,0 +1,41 @@
+{
+    "fileName": "id_1735925700826_186_propertyChange",
+    "fileType": "change",
+    "changeType": "propertyChange",
+    "moduleName": "",
+    "reference": "com.sap.lh.dm.zcdmmtrpresampling",
+    "packageName": "",
+    "content": {
+        "property": "showClearOnFB",
+        "newValue": false
+    },
+    "selector": {
+        "id": "com.sap.lh.dm.zcdmmtrpresampling::sap.suite.ui.generic.template.ListReport.view.ListReport::ZC_DM_MTR_PRESAMPLING_CON--listReportFilter",
+        "idIsLocal": false,
+        "type": "sap.ui.comp.smartfilterbar.SmartFilterBar"
+    },
+    "layer": "CUSTOMER_BASE",
+    "texts": {},
+    "namespace": "apps/com.sap.lh.dm.zcdmmtrpresampling/changes/",
+    "projectId": "",
+    "creation": 1736423182834,
+    "originalLanguage": "",
+    "support": {
+        "generator": "changeUtils: SAPFioriTools",
+        "service": "",
+        "user": "",
+        "sapui5Version": "1.120.0",
+        "sourceChangeFileName": "",
+        "compositeCommand": ""
+    },
+    "oDataInformation": {},
+    "dependentSelector": {},
+    "validAppVersions": {
+        "from": "0.0.1",
+        "to": "0.0.1",
+        "creation": "0.0.1"
+    },
+    "jsOnly": false,
+    "variantReference": "",
+    "appDescriptorChange": false
+}
