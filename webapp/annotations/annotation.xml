@@ -13,6 +13,10 @@
             <Annotations Target="SAP.ZC_DM_MTR_PRESAMPLING_CONType">
                 <Annotation Term="UI.LineItem">
                     <Collection>
+                        <Record Type="UI.DataFieldForAction">
+                            <PropertyValue Property="Label" String="Assign Lot" />
+                            <PropertyValue Property="Action" String="com.sap.lh.dm.zcdmmtrpresampling.controller.ExtendedController.AssignLot" />
+                        </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="matnr"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>

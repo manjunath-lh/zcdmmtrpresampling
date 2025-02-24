@@ -16,9 +16,13 @@ builder:
         target:
           url: http://sapsdvapp.aws.londonhydro.cloud:8000
           client: "200"
+          auth: basic
+        credentials:
+          username: env:UI5_USERNAME
+          password: env:UI5_PASSWORD
         app:
           name: ZPRESAMPLINGCDS
           package: ZDM
-          transport: SDVK906472
+          transport: SDVK903836
         exclude:
           - /test/

@@ -1,0 +1,62 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog
+        id="idLotAssignDialog"
+        contentWidth="40%"
+        resizable="true"
+        draggable="true"
+        title="Assign Lot">
+        <content>
+            <VBox
+                id="idLotAssignDialogVBox"
+                class="sapUiSmallMargin">
+                <Label
+                    id="idLotNumberLabel"
+                    text="Lot Number" />
+                <Input
+                    id="idlotNumberInput"
+                    placeholder="Enter Lot Number"
+                    maxLength="8"
+                    valueStateText="Lot number required"
+                    class="sapUiSmallMarginBottom" />
+                <List
+                    id="idEquipmentsList"
+                    items="{dialogModel>/Equipments}">
+                    <headerToolbar>
+                        <Toolbar id="idToolbar">
+                            <Title
+                                id="idSelectedEquipmentsTitle"
+                                class="idSelectedEquipmentsTitle"
+                                text="Selected Equipments"
+                                titleStyle="H6" />
+                        </Toolbar>
+                    </headerToolbar>
+                    <items>
+                        <StandardListItem
+                            id="idSelectedStandardListItem"
+                            title="{dialogModel>Equnr}"
+                            info="{dialogModel>Message}"
+                            infoState="{
+                                path: 'dialogModel>Type',
+                                formatter: '.statusFormatter'
+                            }" />
+                    </items>
+                </List>
+            </VBox>
+        </content>
+        <beginButton>
+            <Button
+                id="idAssignSubmitButton"
+                text="Assign"
+                type="Emphasized"
+                press="onAssignButtonPress" />
+        </beginButton>
+        <endButton>
+            <Button
+                id="idCancelLotButton"
+                text="Cancel"
+                press="onCancelButtonPress" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

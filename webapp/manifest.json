@@ -41,6 +41,13 @@
         "settings": {
           "localUri": "annotations/annotation.xml"
         }
+      },
+      "lotService": {
+        "type": "OData",
+        "uri": "/sap/opu/odata/sap/ZDM_LOT_DEVICE_SRV",
+        "settings": {
+          "odataVersion": "2.0"
+        }
       }
     }
   },
@@ -97,6 +104,10 @@
           }
         }
       },
+      "lotModel": {
+        "dataSource": "lotService",
+        "preload": true
+      },
       "@i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "uri": "i18n/i18n.properties"
@@ -109,6 +120,15 @@
       "config": {},
       "routes": [],
       "targets": {}
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+            "controllerName": "com.sap.lh.dm.zcdmmtrpresampling.extend.ExtendedController"
+          }
+        }
+      }
     }
   },
   "sap.ui.generic.app": {
