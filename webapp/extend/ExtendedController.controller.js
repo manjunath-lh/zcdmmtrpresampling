@@ -70,8 +70,7 @@ sap.ui.define([
 						const { error } = JSON.parse(responseText)
 
 						MessageBox.error(error.message.value, {
-							title: `${statusCode}: ${statusText}`,
-							details: error
+							title: `${statusCode}: ${statusText}`
 						})
 						console.error(err)
 					}
